@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Задача2</title>
+            <meta charset="UTF-8">
+        </head>
+            <body>
+            <script>
+
+              class Animal {
+                constructor (name) {
+                    this.name = name;
+                }
+              }
+
+              class Cats extends Animal {
+                constructor (name, gender) {
+                    super(name);
+                    this.gender = gender;
+                }
+              }
+
+              class Dogs extends Animal {
+                constructor (name, age) {
+                    super (name);
+                    this.age = age;
+                }
+              }
+
+              let cat = new Cats ('Masha', 'girl');
+              console.log (cat);
+
+              console.log (cat instanceof Animal);
+
+              let dog = new Dogs ('Rich', 3);
+              console.log (dog)
+
+
+
+              </script>
+
+            </body>
+            </html>
